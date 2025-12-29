@@ -27,7 +27,7 @@
     html{scroll-behavior:smooth}
     body{
       margin:0;
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Liberation Sans", sans-serif;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, Noto Sans, Liberation Sans, sans-serif;
       background: radial-gradient(1200px 700px at 15% 10%, rgba(77,163,255,.20), transparent 55%),
                   radial-gradient(900px 600px at 85% 10%, rgba(124,92,255,.20), transparent 55%),
                   linear-gradient(180deg, #070b14, var(--bg));
@@ -49,11 +49,7 @@
       gap:16px;
     }
 
-    .brand{
-      display:flex; align-items:center; gap:12px;
-      letter-spacing:.2px;
-      min-width: 260px;
-    }
+    .brand{display:flex; align-items:center; gap:12px; letter-spacing:.2px; min-width:260px;}
 
     /* Fundo do logo (branco). Para transparente: background: transparent; padding:0; border:0; */
     .brand img{
@@ -61,8 +57,8 @@
       width:auto;
       border-radius:12px;
       display:block;
-      background: #ffffff;
-      padding: 3px 6px;
+      background:#ffffff;
+      padding:3px 6px;
       border: 1px solid rgba(255,255,255,.10);
     }
 
@@ -141,24 +137,11 @@
       display:grid;
       place-items:center;
     }
-    .portfolio-thumb img{
-      width:100%;
-      height:100%;
-      object-fit: cover;
-      display:block;
-    }
-    .portfolio-placeholder{
-      color: var(--muted);
-      font-size: 13px;
-      padding: 10px;
-      text-align:center;
-    }
-  
+    .portfolio-thumb img{width:100%; height:100%; object-fit:cover; display:block;}
 
     /* FAQ: evita que o card ao lado estique quando um item abre */
     .faq .grid2{align-items:start}
     .faq details{align-self:start}
-
   </style>
 </head>
 
@@ -330,7 +313,6 @@
       </div>
     </section>
 
-    <!-- ===== PORTFÓLIO RECENTE ===== -->
     <section id="portfolio">
       <div class="sec-title">
         <h2>Portfólio Recente</h2>
@@ -338,54 +320,12 @@
       </div>
 
       <div class="portfolio-grid">
-        <!-- Caixa 1 -->
-        <div class="card box portfolio-card">
-          <div class="portfolio-thumb">
-            <!-- Coloque sua imagem aqui (src) -->
-            <!-- <img src="imagens/projeto-01.jpg" alt="Projeto 01" /> -->
-            <div class="portfolio-placeholder">Insira uma imagem (16:10).<br/>Ex.: projeto-01.jpg</div>
-          </div>
-        </div>
-
-        <!-- Caixa 2 -->
-        <div class="card box portfolio-card">
-          <div class="portfolio-thumb">
-            <!-- <img src="imagens/projeto-02.jpg" alt="Projeto 02" /> -->
-            <div class="portfolio-placeholder">Insira uma imagem (16:10).<br/>Ex.: projeto-02.jpg</div>
-          </div>
-        </div>
-
-        <!-- Caixa 3 -->
-        <div class="card box portfolio-card">
-          <div class="portfolio-thumb">
-            <!-- <img src="imagens/projeto-03.jpg" alt="Projeto 03" /> -->
-            <div class="portfolio-placeholder">Insira uma imagem (16:10).<br/>Ex.: projeto-03.jpg</div>
-          </div>
-        </div>
-
-        <!-- Caixa 4 -->
-        <div class="card box portfolio-card">
-          <div class="portfolio-thumb">
-            <!-- <img src="imagens/projeto-04.jpg" alt="Projeto 04" /> -->
-            <div class="portfolio-placeholder">Insira uma imagem (16:10).<br/>Ex.: projeto-04.jpg</div>
-          </div>
-        </div>
-
-        <!-- Caixa 5 -->
-        <div class="card box portfolio-card">
-          <div class="portfolio-thumb">
-            <!-- <img src="imagens/projeto-05.jpg" alt="Projeto 05" /> -->
-            <div class="portfolio-placeholder">Insira uma imagem (16:10).<br/>Ex.: projeto-05.jpg</div>
-          </div>
-        </div>
-
-        <!-- Caixa 6 -->
-        <div class="card box portfolio-card">
-          <div class="portfolio-thumb">
-            <!-- <img src="imagens/projeto-06.jpg" alt="Projeto 06" /> -->
-            <div class="portfolio-placeholder">Insira uma imagem (16:10).<br/>Ex.: projeto-06.jpg</div>
-          </div>
-        </div>
+        <div class="card box portfolio-card"><div class="portfolio-thumb"><img src="https://raw.githubusercontent.com/brunodaranguiz/seuestrutural/refs/heads/main/Imagens/01.png" alt="Portfólio 01" loading="lazy" /></div></div>
+        <div class="card box portfolio-card"><div class="portfolio-thumb"><img src="https://raw.githubusercontent.com/brunodaranguiz/seuestrutural/refs/heads/main/Imagens/02.png" alt="Portfólio 02" loading="lazy" /></div></div>
+        <div class="card box portfolio-card"><div class="portfolio-thumb"><img src="https://raw.githubusercontent.com/brunodaranguiz/seuestrutural/refs/heads/main/Imagens/03.png" alt="Portfólio 03" loading="lazy" /></div></div>
+        <div class="card box portfolio-card"><div class="portfolio-thumb"><img src="https://raw.githubusercontent.com/brunodaranguiz/seuestrutural/refs/heads/main/Imagens/04.png" alt="Portfólio 04" loading="lazy" /></div></div>
+        <div class="card box portfolio-card"><div class="portfolio-thumb"><img src="https://raw.githubusercontent.com/brunodaranguiz/seuestrutural/refs/heads/main/Imagens/05.png" alt="Portfólio 05" loading="lazy" /></div></div>
+        <div class="card box portfolio-card"><div class="portfolio-thumb"><img src="https://raw.githubusercontent.com/brunodaranguiz/seuestrutural/refs/heads/main/Imagens/06.png" alt="Portfólio 06" loading="lazy" /></div></div>
       </div>
     </section>
 
@@ -427,7 +367,7 @@
       <div class="contact">
         <div class="card box">
           <h3>Formulário</h3>
-          <p>Preencha e envie os arquivos pelo WhatsApp/e-mail. Se preferir, mande “Orçamento Projeto Estrutural”.</p>
+          <p>Preencha e envie os arquivos pelo WhatsApp/e-mail. Se preferir, mande Orçamento Projeto Estrutural.</p>
 
           <form onsubmit="return handleSubmit(event)">
             <div class="grid2">
@@ -476,7 +416,7 @@
             </div>
             <div style="display:flex; flex-wrap:wrap; gap:10px; align-items:center; justify-content:space-between">
               <span>Contato: +55 (51) 99524-2050 • contato@bdaengenharia.com</span>
-              <span>CREA-RS: 231139</span>
+              <span>CREA-RS 231139</span>
             </div>
           </div>
         </div>
